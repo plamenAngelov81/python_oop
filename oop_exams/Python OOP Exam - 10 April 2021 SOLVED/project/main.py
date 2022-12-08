@@ -1,0 +1,21 @@
+from project.controller import Controller
+
+controller = Controller()
+
+print(controller.add_aquarium("FreshwaterAquarium", "Name_1"))
+print(controller.add_aquarium("SaltwaterAquarium", "Name_2"))
+print("=" * 20)
+print(controller.add_decoration("Plant"))
+print(controller.add_decoration("Plant"))
+print(controller.add_decoration("Ornament"))
+print("=" * 20)
+print(controller.insert_decoration("Name_1", "Plant"))
+print(controller.insert_decoration("Name_1", "Plant"))
+print("=" * 20)
+print(controller.add_fish("Name_1", "FreshwaterFish", "Mimi", "catfish", 10))
+print(controller.add_fish("Name_1", "FreshwaterFish", "Lily", "carp", 10))
+print(controller.calculate_value("Name_1"))
+print("*" * 20)
+print(controller.feed_fish("Name_1"))
+print("*" * 20)
+print(controller.report())
